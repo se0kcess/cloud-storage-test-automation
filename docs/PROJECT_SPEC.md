@@ -35,7 +35,7 @@ cloud-storage-qa/
   reports/ (gitignored)
 ```
 
-## 단계별 구현 계획 (14일 목표, 일정은 추정)
+## 단계별 구현 계획
 1. Day 1: GitHub 저장소 cloud-storage-qa, git 초기화, Python venv, 기본 구조, README, gitignore, 환경 변수 예시. 기존 저장소 여부 먼저 확인.
 2. Day 2: 검증된 MinIO 릴리스/빌드 방법 선택, Dockerfile, Compose, loopback 9000/9001, health check, volume 영속성 수동 검증.
 3. Day 3–4: Boto3 CRUD 실습, 요구사항/리스크/테스트 케이스 문서, 공통 client adapter.
@@ -77,6 +77,3 @@ cloud-storage-qa/
 - https://docs.aws.amazon.com/
 - https://developer.hashicorp.com/terraform/docs
 - https://kind.sigs.k8s.io/docs/user/quick-start/
-
-## 현재 진행 상태
-2026-11-26: GitHub 저장소 se0kcess/cloud-storage-test-automation을 확인하고 기존 main 이력을 로컬에 연결했다. Phase 1 기본 파일과 Python 가상환경을 준비했다. 최초 설치는 공간 부족으로 실패했으나, 재시도에서 전체 설치·pip check·import·환경 점검을 통과했다. 간접 의존성은 requirements.lock.txt에 고정했다. 실제 증거는 phase-01-evidence.md를 참고한다. 커밋/push, MinIO, S3 기능 테스트, CI/CD와 AWS 리소스 생성은 아직 수행하지 않았다. 이전 가이드의 버전과 예제는 실행 검증 후 적용한다.
