@@ -27,8 +27,6 @@ EKS와 성능 도구는 선택 사항입니다. AWS 유료 리소스는 비용�
 
 ## Phase 1 실행
 
-프로젝트 루트에서 실행합니다. 현재 로컬 폴더명은 `cloud-storage-qa`이며 GitHub 저장소명과 달라도 정상입니다.
-
 ```bash
 python3.12 -m venv .venv  # 새 환경에서 한 번 실행
 source .venv/bin/activate
