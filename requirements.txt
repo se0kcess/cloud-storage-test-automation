@@ -1,0 +1,6 @@
+# macOS/Python 3.12.1에서 설치, pip check 및 import 검증 완료.
+# 직접 의존성 목록. 간접 의존성까지 재현할 때는 requirements.lock.txt 사용.
+pytest==9.2.0
+boto3==1.44.12
+requests==2.34.2
+pytest-html==4.2.0

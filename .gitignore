@@ -221,3 +221,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Cloud storage QA lab
+docs/phase-01-evidence.md
+.DS_Store
+.env.*
+!.env.example
+reports/
+.aws/
+*.pem
+*.key
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.tfvars.json
+crash.log
+# .terraform.lock.hcl은 이후 provider 버전 고정을 위해 추적한다.
