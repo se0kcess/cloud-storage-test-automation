@@ -5,7 +5,6 @@ S3 호환 오브젝트 스토리지 QA 자동화 실습 프로젝트입니다.
 
 - 저장소: https://github.com/se0kcess/cloud-storage-test-automation
 - 전체 요구사항 및 단계: [프로젝트 명세](docs/PROJECT_SPEC.md)
-- 현재 실습: [Phase 1 — 저장소 및 개발 환경](docs/phase-01-setup.md)
 - 기존 로컬 시작 안내: [보존본](docs/reference/starter-readme.md)
 
 ## 단계별 학습 흐름
