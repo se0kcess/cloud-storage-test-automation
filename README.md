@@ -1,6 +1,6 @@
 # cloud-storage-test-automation
 
-클라우드 QA 엔지니어 취업을 위한 S3 호환 오브젝트 스토리지 QA 자동화 실습 프로젝트입니다.
+S3 호환 오브젝트 스토리지 QA 자동화 실습 프로젝트입니다.
 기능·인증/인가·데이터 무결성·장애 복구를 검증하고, 재현 가능한 실행 방법과 실제 증거를 남깁니다.
 
 - 저장소: https://github.com/se0kcess/cloud-storage-test-automation
