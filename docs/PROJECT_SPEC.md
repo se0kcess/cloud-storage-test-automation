@@ -36,17 +36,17 @@ cloud-storage-qa/
 ```
 
 ## 단계별 구현 계획
-1. Day 1: GitHub 저장소 cloud-storage-qa, git 초기화, Python venv, 기본 구조, README, gitignore, 환경 변수 예시. 기존 저장소 여부 먼저 확인.
-2. Day 2: 검증된 MinIO 릴리스/빌드 방법 선택, Dockerfile, Compose, loopback 9000/9001, health check, volume 영속성 수동 검증.
-3. Day 3–4: Boto3 CRUD 실습, 요구사항/리스크/테스트 케이스 문서, 공통 client adapter.
-4. Day 5–6: Pytest fixture, marker, parameterize, 기능·경계·인증·무결성 자동화. 로컬 실행 결과 기록.
-5. Day 7: GitHub Actions CI, HTML/JUnit/log artifacts, 실패 시 cleanup, branch protection/quality gate의 성공과 실패 검증. MVP 완료.
-6. Day 8–9: AWS 계정/비용/권한 확인, EC2/VPC/SG/EBS 설계 및 승인 후 구축. MinIO는 사설 접근 또는 터널만 허용.
-7. Day 10: ECR 이미지 배포 및 OIDC 기반 CD, CI가 검증한 동일 이미지 digest 사용, 배포 후 smoke, 실패 시 이전 버전 복구 절차.
-8. Day 11: AWS S3 공통 API 검증 및 IAM/정책 검증. 전용 테스트 리소스만 사용. MinIO와 AWS 결과 비교.
-9. Day 12: Terraform 코드화, fmt/validate/plan, 승인 후 apply/destroy. state와 secrets 제외, 잔존 리소스 확인.
-10. Day 13: Kind, PVC, readiness/liveness, Pod 재생성 후 데이터 유지 및 복구 시간 검증. 단일 인스턴스는 HA가 아님.
-11. Day 14: README, 아키텍처, 테스트 결과, 문제 해결 기록, 면접 예상 질문. 선택: Locust 및 CloudWatch 지표.
+1. GitHub 저장소 cloud-storage-qa, git 초기화, Python venv, 기본 구조, README, gitignore, 환경 변수 예시. 기존 저장소 여부 먼저 확인.
+2. 검증된 MinIO 릴리스/빌드 방법 선택, Dockerfile, Compose, loopback 9000/9001, health check, volume 영속성 수동 검증.
+3. Boto3 CRUD 실습, 요구사항/리스크/테스트 케이스 문서, 공통 client adapter.
+4. Pytest fixture, marker, parameterize, 기능·경계·인증·무결성 자동화. 로컬 실행 결과 기록.
+5. GitHub Actions CI, HTML/JUnit/log artifacts, 실패 시 cleanup, branch protection/quality gate의 성공과 실패 검증. MVP 완료.
+6. AWS 계정/비용/권한 확인, EC2/VPC/SG/EBS 설계 및 승인 후 구축. MinIO는 사설 접근 또는 터널만 허용.
+7. ECR 이미지 배포 및 OIDC 기반 CD, CI가 검증한 동일 이미지 digest 사용, 배포 후 smoke, 실패 시 이전 버전 복구 절차.
+8. AWS S3 공통 API 검증 및 IAM/정책 검증. 전용 테스트 리소스만 사용. MinIO와 AWS 결과 비교.
+9. Terraform 코드화, fmt/validate/plan, 승인 후 apply/destroy. state와 secrets 제외, 잔존 리소스 확인.
+10. Kind, PVC, readiness/liveness, Pod 재생성 후 데이터 유지 및 복구 시간 검증. 단일 인스턴스는 HA가 아님.
+11. README, 아키텍처, 테스트 결과, 문제 해결 기록, 면접 예상 질문. 선택: Locust 및 CloudWatch 지표.
 
 ## 테스트 요구사항 / 후보 케이스
 | ID | 검증 | 기대 결과 |
