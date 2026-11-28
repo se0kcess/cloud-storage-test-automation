@@ -1,0 +1,27 @@
+name: cloud-storage-qa-lab
+services:
+  minio:
+    image: cloud-storage-qa/minio:release-2025-10-15-lab1
+    build:
+      context: .
+      dockerfile: infra/Dockerfile
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:?Run python scripts/init_lab_env.py first}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?Run python scripts/init_lab_env.py first}
+    ports:
+      - "127.0.0.1:9000:9000"
+      - "127.0.0.1:9001:9001"
+    volumes:
+      - minio-data:/data
+    networks:
+      - lab
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    stop_grace_period: 20s
+volumes:
+  minio-data:
+networks:
+  lab:
+    driver: bridge

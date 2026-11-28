@@ -1,0 +1,4 @@
+# 로컬 자격증명, .git, reports, .venv를 build context에 보내지 않는다.
+**
+!infra/
+!infra/Dockerfile
